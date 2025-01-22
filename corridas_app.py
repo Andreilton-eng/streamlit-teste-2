@@ -3,7 +3,7 @@
 import pandas as pd
 import streamlit as st
 from PIL import Image
-import openpyxl
+#import openpyxl
 
 #######################################
 # CONFICURAÇÃO DA PÁGINA
@@ -38,7 +38,7 @@ with st.sidebar:
 def load_data():
     data = pd.read_excel(
         io="Analise de CorComp_D.xlsx",
-        engine="openpyxl",
+        #engine="openpyxl",
         sheet_name="Médias",
         usecols="B:C",
         skiprows=2,
