@@ -33,24 +33,21 @@ with st.sidebar:
 # CARREGANDO ARQUIVO
 #######################################
 
-#@st.cache_data
+@st.cache_data
 #def load_data(file):
-#def load_data(path: str):
-    #data = pd.read_excel(
-        #path,
+def load_data():
+    data = pd.read_excel(
+        io="Analise de CorComp_D.xlsx",
         #engine="openpyxl",
-        #sheet_name="Médias",
-        #usecols="B:C",
-        #skiprows=2,
-    #)
-    #return data
+        sheet_name="Médias",
+        usecols="B:C",
+        skiprows=2,
+    )
+    return data
 
 
 #df = load_data(uploaded_file)
-#df = load_data("./Analise de CorComp_D.xlsx")
-df = pd.read_excel("Analise de CorComp_D.xlsx")
-
-display(df)
+df = load_data()
 
 with st.expander("Dados"):
     st.dataframe(
