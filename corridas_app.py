@@ -10,7 +10,7 @@ from PIL import Image
 #######################################
 
 st.set_page_config(
-    page_title="Corridas Compartilhadas",
+    page_title="CorCom",
     page_icon=":bar_chart:",
     layout="wide",
 )
