@@ -39,9 +39,9 @@ def load_data(path: str):
     data = pd.read_excel(
         path,
         #engine="openpyxl",
-        sheet_name="Médias",
-        usecols="B:C",
-        skiprows=2,
+        #sheet_name="Médias",
+        #usecols="B:C",
+        #skiprows=2,
     )
     return data
 
