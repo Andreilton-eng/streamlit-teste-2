@@ -50,6 +50,8 @@ with st.sidebar:
 #df = load_data("./Analise de CorComp_D.xlsx")
 df = pd.read_excel("Analise de CorComp_D.xlsx")
 
+display(df)
+
 with st.expander("Dados"):
     st.dataframe(
         df,
