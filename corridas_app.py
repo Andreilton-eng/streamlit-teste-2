@@ -37,7 +37,7 @@ with st.sidebar:
 #def load_data(file):
 def load_data():
     data = pd.read_excel(
-        io="Analise de CorComp_D.xlsx",
+        "Analise de CorComp_D.xlsx",
         #engine="openpyxl",
         sheet_name="Médias",
         usecols="B:C",
