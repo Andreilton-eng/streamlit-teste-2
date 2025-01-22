@@ -3,6 +3,7 @@
 import pandas as pd
 import streamlit as st
 from PIL import Image
+import openpyxl
 
 #######################################
 # CONFICURAÇÃO DA PÁGINA
