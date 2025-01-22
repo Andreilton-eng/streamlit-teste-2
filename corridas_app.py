@@ -35,9 +35,9 @@ with st.sidebar:
 
 @st.cache_data
 #def load_data(file):
-def load_data():
+def load_data(path: str):
     data = pd.read_excel(
-        "Analise de CorComp_D.xlsx",
+        path,
         #engine="openpyxl",
         sheet_name="Médias",
         usecols="B:C",
@@ -47,7 +47,7 @@ def load_data():
 
 
 #df = load_data(uploaded_file)
-df = load_data()
+df = load_data("./Analise de CorComp_D.xlsx")
 
 with st.expander("Dados"):
     st.dataframe(
