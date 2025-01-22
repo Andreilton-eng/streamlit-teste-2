@@ -37,7 +37,7 @@ if uploaded_file is None:
 def load_data(file):
 #def load_data():
     data = pd.read_excel(
-        io="Arquivo.xlsx",
+        file,
         engine="openpyxl",
         sheet_name="Médias",
         usecols="B:C",
